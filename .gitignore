@@ -22,6 +22,7 @@ package-lock.json
 .vscode/*
 !.vscode/extensions.json
 .idea
+*.iml
 *.suo
 *.ntvs*
 *.njsproj
