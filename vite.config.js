@@ -15,11 +15,11 @@ export default defineConfig({
     host: '0.0.0.0', // 允许通过 IP 访问
     proxy: {
       '/api': {
-        target: 'http://localhost:8080', // Django 后端
+        target: 'http://localhost:8080', // 后端地址
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },
-      // 代理上传文件路径到 Django 后端
+      // 代理上传文件路径到后端
       '/media': {
         target: 'http://localhost:8000',
         changeOrigin: true
